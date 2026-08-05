@@ -1,0 +1,47 @@
+{
+  "type" : "record",
+  "name" : "ItemCategory",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: ItemCategory",
+  "fields" : [ {
+    "name" : "ItemID",
+    "type" : [ "null", "int" ],
+    "doc" : "ItemID",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "CategoryID",
+    "type" : [ "null", "int" ],
+    "doc" : "CategoryID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "IsDefaultItem",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsDefaultItem",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Signature",
+    "type" : [ "null", "string" ],
+    "doc" : "Signature",
+    "default" : null
+  } ]
+}

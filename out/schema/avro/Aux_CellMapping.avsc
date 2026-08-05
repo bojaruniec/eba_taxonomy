@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "Aux_CellMapping",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Aux_CellMapping",
+  "fields" : [ {
+    "name" : "NewCellID",
+    "type" : [ "null", "int" ],
+    "doc" : "NewCellID",
+    "default" : null
+  }, {
+    "name" : "NewTableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "NewTableVID",
+    "default" : null
+  }, {
+    "name" : "OldCellID",
+    "type" : [ "null", "int" ],
+    "doc" : "OldCellID",
+    "default" : null
+  }, {
+    "name" : "OldTableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "OldTableVID",
+    "default" : null
+  } ]
+}

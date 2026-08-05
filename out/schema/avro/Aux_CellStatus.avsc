@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "Aux_CellStatus",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Aux_CellStatus",
+  "fields" : [ {
+    "name" : "TableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableVID",
+    "default" : null
+  }, {
+    "name" : "CellID",
+    "type" : [ "null", "int" ],
+    "doc" : "CellID",
+    "default" : null
+  }, {
+    "name" : "IsNewCell",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsNewCell",
+    "default" : null
+  }, {
+    "name" : "Status",
+    "type" : [ "null", "string" ],
+    "doc" : "Status",
+    "default" : null
+  } ]
+}

@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "VariableCalculation",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: VariableCalculation",
+  "fields" : [ {
+    "name" : "ModuleID",
+    "type" : [ "null", "int" ],
+    "doc" : "ModuleID",
+    "default" : null
+  }, {
+    "name" : "VariableID",
+    "type" : [ "null", "int" ],
+    "doc" : "VariableID",
+    "default" : null
+  }, {
+    "name" : "OperationVID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperationVID",
+    "default" : null
+  }, {
+    "name" : "FromReferenceDate",
+    "type" : [ "null", "string" ],
+    "doc" : "FromReferenceDate",
+    "default" : null
+  }, {
+    "name" : "ToReferenceDate",
+    "type" : [ "null", "string" ],
+    "doc" : "ToReferenceDate",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}

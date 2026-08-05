@@ -1,0 +1,122 @@
+{
+  "type" : "record",
+  "name" : "VarGeneration_Detail",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: VarGeneration_Detail",
+  "fields" : [ {
+    "name" : "noofcells",
+    "type" : [ "null", "int" ],
+    "doc" : "noofcells",
+    "default" : null
+  }, {
+    "name" : "ModuleVID",
+    "type" : [ "null", "int" ],
+    "doc" : "ModuleVID",
+    "default" : null
+  }, {
+    "name" : "TableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableVID",
+    "default" : null
+  }, {
+    "name" : "CellID",
+    "type" : [ "null", "int" ],
+    "doc" : "CellID",
+    "default" : null
+  }, {
+    "name" : "tvstartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "tvstartReleaseID",
+    "default" : null
+  }, {
+    "name" : "mvStartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "mvStartReleaseID",
+    "default" : null
+  }, {
+    "name" : "vvOldEndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "vvOldEndReleaseID",
+    "default" : null
+  }, {
+    "name" : "OldVariableID",
+    "type" : [ "null", "int" ],
+    "doc" : "OldVariableID",
+    "default" : null
+  }, {
+    "name" : "NewVarID",
+    "type" : [ "null", "int" ],
+    "doc" : "NewVarID",
+    "default" : null
+  }, {
+    "name" : "OldVariableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "OldVariableVID",
+    "default" : null
+  }, {
+    "name" : "NewVVID",
+    "type" : [ "null", "int" ],
+    "doc" : "NewVVID",
+    "default" : null
+  }, {
+    "name" : "isVoid",
+    "type" : [ "null", "boolean" ],
+    "doc" : "isVoid",
+    "default" : null
+  }, {
+    "name" : "IsNewCell",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsNewCell",
+    "default" : null
+  }, {
+    "name" : "isnewPropertyDataType",
+    "type" : [ "null", "boolean" ],
+    "doc" : "isnewPropertyDataType",
+    "default" : null
+  }, {
+    "name" : "isNewKey",
+    "type" : [ "null", "boolean" ],
+    "doc" : "isNewKey",
+    "default" : null
+  }, {
+    "name" : "NewAspect",
+    "type" : [ "null", "string" ],
+    "doc" : "NewAspect",
+    "default" : null
+  }, {
+    "name" : "ModuleCode",
+    "type" : [ "null", "string" ],
+    "doc" : "ModuleCode",
+    "default" : null
+  }, {
+    "name" : "TableCode",
+    "type" : [ "null", "string" ],
+    "doc" : "TableCode",
+    "default" : null
+  }, {
+    "name" : "cellcode",
+    "type" : [ "null", "string" ],
+    "doc" : "cellcode",
+    "default" : null
+  }, {
+    "name" : "outcomeID",
+    "type" : [ "null", "string" ],
+    "doc" : "outcomeID",
+    "default" : null
+  }, {
+    "name" : "outcomeVID",
+    "type" : [ "null", "string" ],
+    "doc" : "outcomeVID",
+    "default" : null
+  }, {
+    "name" : "ReportMsg",
+    "type" : [ "null", "string" ],
+    "doc" : "ReportMsg",
+    "default" : null
+  }, {
+    "name" : "OldAspect",
+    "type" : [ "null", "string" ],
+    "doc" : "OldAspect",
+    "default" : null
+  } ]
+}

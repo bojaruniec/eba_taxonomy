@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "KeyHeaderMapping",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: KeyHeaderMapping",
+  "fields" : [ {
+    "name" : "AssociationID",
+    "type" : [ "null", "int" ],
+    "doc" : "AssociationID",
+    "default" : null
+  }, {
+    "name" : "ForeignKeyHeaderID",
+    "type" : [ "null", "int" ],
+    "doc" : "ForeignKeyHeaderID",
+    "default" : null
+  }, {
+    "name" : "PrimaryKeyHeaderID",
+    "type" : [ "null", "int" ],
+    "doc" : "PrimaryKeyHeaderID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}

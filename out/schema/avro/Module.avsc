@@ -1,0 +1,32 @@
+{
+  "type" : "record",
+  "name" : "Module",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Module",
+  "fields" : [ {
+    "name" : "FrameworkID",
+    "type" : [ "null", "int" ],
+    "doc" : "FrameworkID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "ModuleID",
+    "type" : [ "null", "int" ],
+    "doc" : "ModuleID",
+    "default" : null
+  }, {
+    "name" : "isDocumentModule",
+    "type" : [ "null", "boolean" ],
+    "doc" : "isDocumentModule",
+    "default" : null
+  } ]
+}

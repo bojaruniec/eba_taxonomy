@@ -1,0 +1,22 @@
+{
+  "type" : "record",
+  "name" : "ModuleParameters",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: ModuleParameters",
+  "fields" : [ {
+    "name" : "ModuleVID",
+    "type" : [ "null", "int" ],
+    "doc" : "ModuleVID",
+    "default" : null
+  }, {
+    "name" : "VariableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "VariableVID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}

@@ -1,0 +1,22 @@
+{
+  "type" : "record",
+  "name" : "ConceptRelation",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: ConceptRelation",
+  "fields" : [ {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "ConceptRelationID",
+    "type" : [ "null", "int" ],
+    "doc" : "ConceptRelationID",
+    "default" : null
+  }, {
+    "name" : "Type",
+    "type" : [ "null", "string" ],
+    "doc" : "Type",
+    "default" : null
+  } ]
+}

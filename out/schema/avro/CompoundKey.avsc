@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "CompoundKey",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: CompoundKey",
+  "fields" : [ {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "KeyID",
+    "type" : [ "null", "int" ],
+    "doc" : "KeyID",
+    "default" : null
+  }, {
+    "name" : "Signature",
+    "type" : [ "null", "string" ],
+    "doc" : "Signature",
+    "default" : null
+  } ]
+}

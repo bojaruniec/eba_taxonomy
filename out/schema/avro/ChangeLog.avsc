@@ -1,0 +1,57 @@
+{
+  "type" : "record",
+  "name" : "ChangeLog",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: ChangeLog",
+  "fields" : [ {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "ClassID",
+    "type" : [ "null", "int" ],
+    "doc" : "ClassID",
+    "default" : null
+  }, {
+    "name" : "Timestamp",
+    "type" : [ "null", "double" ],
+    "doc" : "Timestamp",
+    "default" : null
+  }, {
+    "name" : "Status",
+    "type" : [ "null", "string" ],
+    "doc" : "Status",
+    "default" : null
+  }, {
+    "name" : "ReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "ReleaseID",
+    "default" : null
+  }, {
+    "name" : "EntityID",
+    "type" : [ "null", "int" ],
+    "doc" : "EntityID",
+    "default" : null
+  }, {
+    "name" : "ActionID",
+    "type" : [ "null", "int" ],
+    "doc" : "ActionID",
+    "default" : null
+  }, {
+    "name" : "ChangeType",
+    "type" : [ "null", "string" ],
+    "doc" : "ChangeType",
+    "default" : null
+  }, {
+    "name" : "UserEmail",
+    "type" : [ "null", "string" ],
+    "doc" : "UserEmail",
+    "default" : null
+  }, {
+    "name" : "EntityCode",
+    "type" : [ "null", "string" ],
+    "doc" : "EntityCode",
+    "default" : null
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "RelatedConcept",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: RelatedConcept",
+  "fields" : [ {
+    "name" : "ConceptGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "ConceptGUID",
+    "default" : null
+  }, {
+    "name" : "ConceptRelationID",
+    "type" : [ "null", "int" ],
+    "doc" : "ConceptRelationID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "IsRelatedConcept",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsRelatedConcept",
+    "default" : null
+  } ]
+}

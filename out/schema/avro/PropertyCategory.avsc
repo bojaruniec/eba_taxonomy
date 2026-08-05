@@ -1,0 +1,32 @@
+{
+  "type" : "record",
+  "name" : "PropertyCategory",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: PropertyCategory",
+  "fields" : [ {
+    "name" : "PropertyID",
+    "type" : [ "null", "int" ],
+    "doc" : "PropertyID",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "CategoryID",
+    "type" : [ "null", "int" ],
+    "doc" : "CategoryID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}

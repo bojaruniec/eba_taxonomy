@@ -1,0 +1,62 @@
+{
+  "type" : "record",
+  "name" : "Release",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Release",
+  "fields" : [ {
+    "name" : "Date",
+    "type" : [ "null", "string" ],
+    "doc" : "Date",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "ErrorDate",
+    "type" : [ "null", "string" ],
+    "doc" : "ErrorDate",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "ReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "ReleaseID",
+    "default" : null
+  }, {
+    "name" : "IsCurrent",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsCurrent",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  }, {
+    "name" : "Status",
+    "type" : [ "null", "string" ],
+    "doc" : "Status",
+    "default" : null
+  }, {
+    "name" : "Type",
+    "type" : [ "null", "string" ],
+    "doc" : "Type",
+    "default" : null
+  }, {
+    "name" : "Error",
+    "type" : [ "null", "string" ],
+    "doc" : "Error",
+    "default" : null
+  } ]
+}

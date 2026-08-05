@@ -1,0 +1,22 @@
+{
+  "type" : "record",
+  "name" : "Concept",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Concept",
+  "fields" : [ {
+    "name" : "ConceptGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "ConceptGUID",
+    "default" : null
+  }, {
+    "name" : "ClassID",
+    "type" : [ "null", "int" ],
+    "doc" : "ClassID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  } ]
+}

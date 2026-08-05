@@ -1,0 +1,32 @@
+{
+  "type" : "record",
+  "name" : "SubCategoryVersion",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: SubCategoryVersion",
+  "fields" : [ {
+    "name" : "SubCategoryID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubCategoryID",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "SubCategoryVID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubCategoryVID",
+    "default" : null
+  } ]
+}

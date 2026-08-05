@@ -1,0 +1,22 @@
+{
+  "type" : "record",
+  "name" : "KeyComposition",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: KeyComposition",
+  "fields" : [ {
+    "name" : "KeyID",
+    "type" : [ "null", "int" ],
+    "doc" : "KeyID",
+    "default" : null
+  }, {
+    "name" : "VariableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "VariableVID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}

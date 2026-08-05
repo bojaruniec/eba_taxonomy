@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "Document",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Document",
+  "fields" : [ {
+    "name" : "OrgID",
+    "type" : [ "null", "int" ],
+    "doc" : "OrgID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "DocumentID",
+    "type" : [ "null", "int" ],
+    "doc" : "DocumentID",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Type",
+    "type" : [ "null", "string" ],
+    "doc" : "Type",
+    "default" : null
+  } ]
+}

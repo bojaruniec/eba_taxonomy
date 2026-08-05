@@ -1,0 +1,34 @@
+# IDE & OS files
+.idea/
+.vscode/
+.DS_Store
+
+# Maven build artifacts
+target/
+*.jar
+
+# Logs and temporary files
+*.log
+/tmp/
+
+# -------------------------------------------------------------
+# Input Files
+# -------------------------------------------------------------
+# Never commit the heavy MS Access database files or archives
+inp/*.accdb
+inp/*.zip
+
+# -------------------------------------------------------------
+# Output Data
+# -------------------------------------------------------------
+# We commit the UI files (out/index.html, out/app.js, out/config.js)
+# AND the Parquet files (out/parquet/) because they are required
+# for the GitHub Pages static web app to function.
+
+# Ignore the CSV samples (used only for local debugging/validation)
+out/csv/
+
+# Note: out/schema/ is kept as it contains useful DDL and Avro schemas.
+
+# Agent customizations
+.agent/

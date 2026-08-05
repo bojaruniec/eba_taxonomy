@@ -1,0 +1,52 @@
+{
+  "type" : "record",
+  "name" : "TableVersionCell",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: TableVersionCell",
+  "fields" : [ {
+    "name" : "TableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableVID",
+    "default" : null
+  }, {
+    "name" : "CellID",
+    "type" : [ "null", "int" ],
+    "doc" : "CellID",
+    "default" : null
+  }, {
+    "name" : "VariableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "VariableVID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "IsNullable",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsNullable",
+    "default" : null
+  }, {
+    "name" : "IsExcluded",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsExcluded",
+    "default" : null
+  }, {
+    "name" : "IsVoid",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsVoid",
+    "default" : null
+  }, {
+    "name" : "CellCode",
+    "type" : [ "null", "string" ],
+    "doc" : "CellCode",
+    "default" : null
+  }, {
+    "name" : "Sign",
+    "type" : [ "null", "string" ],
+    "doc" : "Sign",
+    "default" : null
+  } ]
+}

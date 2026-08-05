@@ -1,0 +1,62 @@
+{
+  "type" : "record",
+  "name" : "Category",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Category",
+  "fields" : [ {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  }, {
+    "name" : "RefDataSource",
+    "type" : [ "null", "string" ],
+    "doc" : "RefDataSource",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "CreatedRelease",
+    "type" : [ "null", "int" ],
+    "doc" : "CreatedRelease",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "CategoryID",
+    "type" : [ "null", "int" ],
+    "doc" : "CategoryID",
+    "default" : null
+  }, {
+    "name" : "IsEnumerated",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsEnumerated",
+    "default" : null
+  }, {
+    "name" : "IsActive",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsActive",
+    "default" : null
+  }, {
+    "name" : "IsExternalRefData",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsExternalRefData",
+    "default" : null
+  } ]
+}

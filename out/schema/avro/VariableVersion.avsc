@@ -1,0 +1,67 @@
+{
+  "type" : "record",
+  "name" : "VariableVersion",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: VariableVersion",
+  "fields" : [ {
+    "name" : "VariableID",
+    "type" : [ "null", "int" ],
+    "doc" : "VariableID",
+    "default" : null
+  }, {
+    "name" : "PropertyID",
+    "type" : [ "null", "int" ],
+    "doc" : "PropertyID",
+    "default" : null
+  }, {
+    "name" : "SubCategoryVID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubCategoryVID",
+    "default" : null
+  }, {
+    "name" : "ContextID",
+    "type" : [ "null", "int" ],
+    "doc" : "ContextID",
+    "default" : null
+  }, {
+    "name" : "KeyID",
+    "type" : [ "null", "int" ],
+    "doc" : "KeyID",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "VariableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "VariableVID",
+    "default" : null
+  }, {
+    "name" : "IsMultiValued",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsMultiValued",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  } ]
+}

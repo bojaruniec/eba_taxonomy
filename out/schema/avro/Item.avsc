@@ -1,0 +1,42 @@
+{
+  "type" : "record",
+  "name" : "Item",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Item",
+  "fields" : [ {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "ItemID",
+    "type" : [ "null", "int" ],
+    "doc" : "ItemID",
+    "default" : null
+  }, {
+    "name" : "IsProperty",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsProperty",
+    "default" : null
+  }, {
+    "name" : "IsActive",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsActive",
+    "default" : null
+  } ]
+}

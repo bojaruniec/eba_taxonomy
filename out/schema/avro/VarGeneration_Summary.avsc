@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "VarGeneration_Summary",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: VarGeneration_Summary",
+  "fields" : [ {
+    "name" : "noofcells",
+    "type" : [ "null", "int" ],
+    "doc" : "noofcells",
+    "default" : null
+  }, {
+    "name" : "outcomeid",
+    "type" : [ "null", "string" ],
+    "doc" : "outcomeid",
+    "default" : null
+  }, {
+    "name" : "outcomevid",
+    "type" : [ "null", "string" ],
+    "doc" : "outcomevid",
+    "default" : null
+  }, {
+    "name" : "ReportMsg",
+    "type" : [ "null", "string" ],
+    "doc" : "ReportMsg",
+    "default" : null
+  }, {
+    "name" : "mincell",
+    "type" : [ "null", "string" ],
+    "doc" : "mincell",
+    "default" : null
+  }, {
+    "name" : "maxcell",
+    "type" : [ "null", "string" ],
+    "doc" : "maxcell",
+    "default" : null
+  } ]
+}

@@ -1,0 +1,19 @@
+═══════════════════════════════════════════════════════
+ EBA Taxonomy Migrator – Run Summary
+ Generated : 2026-08-05 22:52:14
+═══════════════════════════════════════════════════════
+
+INPUT
+  inp/         649.6 MB  (DPM2 Database_v 4_3_20260622.accdb)
+
+OUTPUT
+  csv/         89.7 KB  (72 files)
+  parquet/     98.6 MB  (70 files)
+  schema/      102.7 KB  (72 files)
+  TOTAL        98.8 MB  (214 files total)
+
+TABLES
+  Exported : 70
+  Skipped  : 2  (system tables starting with ~)
+  Failed   : 0
+

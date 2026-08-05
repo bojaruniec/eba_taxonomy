@@ -1,0 +1,52 @@
+{
+  "type" : "record",
+  "name" : "TableVersionHeader",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: TableVersionHeader",
+  "fields" : [ {
+    "name" : "TableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableVID",
+    "default" : null
+  }, {
+    "name" : "HeaderID",
+    "type" : [ "null", "int" ],
+    "doc" : "HeaderID",
+    "default" : null
+  }, {
+    "name" : "HeaderVID",
+    "type" : [ "null", "int" ],
+    "doc" : "HeaderVID",
+    "default" : null
+  }, {
+    "name" : "ParentHeaderID",
+    "type" : [ "null", "int" ],
+    "doc" : "ParentHeaderID",
+    "default" : null
+  }, {
+    "name" : "Order",
+    "type" : [ "null", "int" ],
+    "doc" : "Order",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "ParentFirst",
+    "type" : [ "null", "boolean" ],
+    "doc" : "ParentFirst",
+    "default" : null
+  }, {
+    "name" : "IsAbstract",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsAbstract",
+    "default" : null
+  }, {
+    "name" : "IsUnique",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsUnique",
+    "default" : null
+  } ]
+}

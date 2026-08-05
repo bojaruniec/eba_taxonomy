@@ -1,0 +1,16 @@
+services:
+  eba-migrator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: eba-taxonomy-migrator:1.0.0
+    container_name: eba-taxonomy-migrator
+    environment:
+      DB_PATH: "/app/inp/DPM2 Database_v 4_3_20260622.accdb"
+      # OUT_DIR is the base output directory; sub-dirs (csv/, parquet/, schema/)
+      # are created automatically by the application.
+      OUT_DIR: "/app/out"
+    volumes:
+      - ./inp:/app/inp:ro
+      - ./out:/app/out
+    restart: "no"

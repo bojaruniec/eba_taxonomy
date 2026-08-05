@@ -1,0 +1,22 @@
+{
+  "type" : "record",
+  "name" : "SubdivisionType",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: SubdivisionType",
+  "fields" : [ {
+    "name" : "SubdivisionTypeID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubdivisionTypeID",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  } ]
+}

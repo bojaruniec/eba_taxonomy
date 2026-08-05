@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "OperandReferenceLocation",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: OperandReferenceLocation",
+  "fields" : [ {
+    "name" : "OperandReferenceID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperandReferenceID",
+    "default" : null
+  }, {
+    "name" : "CellID",
+    "type" : [ "null", "int" ],
+    "doc" : "CellID",
+    "default" : null
+  }, {
+    "name" : "Table",
+    "type" : [ "null", "string" ],
+    "doc" : "Table",
+    "default" : null
+  }, {
+    "name" : "Row",
+    "type" : [ "null", "string" ],
+    "doc" : "Row",
+    "default" : null
+  }, {
+    "name" : "Column",
+    "type" : [ "null", "string" ],
+    "doc" : "Column",
+    "default" : null
+  }, {
+    "name" : "Sheet",
+    "type" : [ "null", "string" ],
+    "doc" : "Sheet",
+    "default" : null
+  } ]
+}

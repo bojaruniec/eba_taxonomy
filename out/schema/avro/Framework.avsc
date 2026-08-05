@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "Framework",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Framework",
+  "fields" : [ {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "FrameworkID",
+    "type" : [ "null", "int" ],
+    "doc" : "FrameworkID",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  } ]
+}
