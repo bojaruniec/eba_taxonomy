@@ -40,6 +40,10 @@
           <div class="logo-sub">DuckDB-Wasm · Parquet · In-Browser</div>
         </div>
       </div>
+      <div class="nav-buttons" style="display:flex; gap: 8px; margin-left: 32px;">
+        <button class="btn btn-ghost" onclick="history.back()" title="Go Back">◀ Back</button>
+        <button class="btn btn-ghost" onclick="history.forward()" title="Go Forward">Forward ▶</button>
+      </div>
       <div class="header-spacer"></div>
       <button class="btn btn-ghost" id="btn-info" style="margin-right:10px;">ⓘ About & Info</button>
       <div class="status-pill">
@@ -89,8 +93,23 @@
         </div>
 
         <!-- Tabulator grid -->
-        <div class="grid-wrap">
+        <div class="grid-wrap" style="position: relative;">
           <div id="data-grid"></div>
+          <div id="grid-loader" style="display: none; position: absolute; inset: 0; background: rgba(10,10,11,0.7); z-index: 50; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+            <div class="spinner"></div>
+            <div style="font-size:14px; color:var(--text-2);">Loading data...</div>
+          </div>
+        </div>
+
+        <!-- Detail Pane (FK Inspector) -->
+        <div class="detail-pane" id="detail-pane">
+          <div class="dp-header">
+            <span class="dp-title" id="dp-title">Record Details</span>
+            <button class="modal-close" id="btn-close-dp">×</button>
+          </div>
+          <div class="dp-body" id="dp-body">
+            <!-- Property table will be injected here -->
+          </div>
         </div>
       </main>
     </div>
