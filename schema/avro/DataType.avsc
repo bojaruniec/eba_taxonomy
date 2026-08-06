@@ -1,0 +1,32 @@
+{
+  "type" : "record",
+  "name" : "DataType",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: DataType",
+  "fields" : [ {
+    "name" : "ParentDataTypeID",
+    "type" : [ "null", "int" ],
+    "doc" : "ParentDataTypeID",
+    "default" : null
+  }, {
+    "name" : "DataTypeID",
+    "type" : [ "null", "int" ],
+    "doc" : "DataTypeID",
+    "default" : null
+  }, {
+    "name" : "IsActive",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsActive",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  } ]
+}

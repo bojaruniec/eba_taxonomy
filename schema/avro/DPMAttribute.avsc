@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "DPMAttribute",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: DPMAttribute",
+  "fields" : [ {
+    "name" : "ClassID",
+    "type" : [ "null", "int" ],
+    "doc" : "ClassID",
+    "default" : null
+  }, {
+    "name" : "AttributeID",
+    "type" : [ "null", "int" ],
+    "doc" : "AttributeID",
+    "default" : null
+  }, {
+    "name" : "HasTranslations",
+    "type" : [ "null", "boolean" ],
+    "doc" : "HasTranslations",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  } ]
+}

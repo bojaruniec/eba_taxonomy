@@ -1,0 +1,32 @@
+{
+  "type" : "record",
+  "name" : "OperationVersionData",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: OperationVersionData",
+  "fields" : [ {
+    "name" : "OperationVID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperationVID",
+    "default" : null
+  }, {
+    "name" : "Error",
+    "type" : [ "null", "string" ],
+    "doc" : "Error",
+    "default" : null
+  }, {
+    "name" : "ErrorCode",
+    "type" : [ "null", "string" ],
+    "doc" : "ErrorCode",
+    "default" : null
+  }, {
+    "name" : "ProposingStatus",
+    "type" : [ "null", "string" ],
+    "doc" : "ProposingStatus",
+    "default" : null
+  }, {
+    "name" : "IsApplying",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsApplying",
+    "default" : null
+  } ]
+}

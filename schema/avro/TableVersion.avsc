@@ -1,0 +1,67 @@
+{
+  "type" : "record",
+  "name" : "TableVersion",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: TableVersion",
+  "fields" : [ {
+    "name" : "TableID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableID",
+    "default" : null
+  }, {
+    "name" : "AbstractTableID",
+    "type" : [ "null", "int" ],
+    "doc" : "AbstractTableID",
+    "default" : null
+  }, {
+    "name" : "KeyID",
+    "type" : [ "null", "int" ],
+    "doc" : "KeyID",
+    "default" : null
+  }, {
+    "name" : "PropertyID",
+    "type" : [ "null", "int" ],
+    "doc" : "PropertyID",
+    "default" : null
+  }, {
+    "name" : "ContextID",
+    "type" : [ "null", "int" ],
+    "doc" : "ContextID",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "TableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableVID",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  } ]
+}

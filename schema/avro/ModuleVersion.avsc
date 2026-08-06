@@ -1,0 +1,77 @@
+{
+  "type" : "record",
+  "name" : "ModuleVersion",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: ModuleVersion",
+  "fields" : [ {
+    "name" : "ModuleID",
+    "type" : [ "null", "int" ],
+    "doc" : "ModuleID",
+    "default" : null
+  }, {
+    "name" : "GlobalKeyID",
+    "type" : [ "null", "int" ],
+    "doc" : "GlobalKeyID",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "FromReferenceDate",
+    "type" : [ "null", "string" ],
+    "doc" : "FromReferenceDate",
+    "default" : null
+  }, {
+    "name" : "ToReferenceDate",
+    "type" : [ "null", "string" ],
+    "doc" : "ToReferenceDate",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "ModuleVID",
+    "type" : [ "null", "int" ],
+    "doc" : "ModuleVID",
+    "default" : null
+  }, {
+    "name" : "IsReported",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsReported",
+    "default" : null
+  }, {
+    "name" : "IsCalculated",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsCalculated",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  }, {
+    "name" : "VersionNumber",
+    "type" : [ "null", "string" ],
+    "doc" : "VersionNumber",
+    "default" : null
+  } ]
+}

@@ -1,0 +1,22 @@
+{
+  "type" : "record",
+  "name" : "User",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: User",
+  "fields" : [ {
+    "name" : "OrgID",
+    "type" : [ "null", "int" ],
+    "doc" : "OrgID",
+    "default" : null
+  }, {
+    "name" : "UserID",
+    "type" : [ "null", "int" ],
+    "doc" : "UserID",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  } ]
+}

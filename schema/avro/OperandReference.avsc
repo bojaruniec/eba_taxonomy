@@ -1,0 +1,57 @@
+{
+  "type" : "record",
+  "name" : "OperandReference",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: OperandReference",
+  "fields" : [ {
+    "name" : "NodeID",
+    "type" : [ "null", "int" ],
+    "doc" : "NodeID",
+    "default" : null
+  }, {
+    "name" : "x",
+    "type" : [ "null", "int" ],
+    "doc" : "x",
+    "default" : null
+  }, {
+    "name" : "y",
+    "type" : [ "null", "int" ],
+    "doc" : "y",
+    "default" : null
+  }, {
+    "name" : "z",
+    "type" : [ "null", "int" ],
+    "doc" : "z",
+    "default" : null
+  }, {
+    "name" : "ItemID",
+    "type" : [ "null", "int" ],
+    "doc" : "ItemID",
+    "default" : null
+  }, {
+    "name" : "PropertyID",
+    "type" : [ "null", "int" ],
+    "doc" : "PropertyID",
+    "default" : null
+  }, {
+    "name" : "VariableID",
+    "type" : [ "null", "int" ],
+    "doc" : "VariableID",
+    "default" : null
+  }, {
+    "name" : "SubCategoryID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubCategoryID",
+    "default" : null
+  }, {
+    "name" : "OperandReferenceID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperandReferenceID",
+    "default" : null
+  }, {
+    "name" : "OperandReference",
+    "type" : [ "null", "string" ],
+    "doc" : "OperandReference",
+    "default" : null
+  } ]
+}

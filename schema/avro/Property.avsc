@@ -1,0 +1,47 @@
+{
+  "type" : "record",
+  "name" : "Property",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Property",
+  "fields" : [ {
+    "name" : "PropertyID",
+    "type" : [ "null", "int" ],
+    "doc" : "PropertyID",
+    "default" : null
+  }, {
+    "name" : "DataTypeID",
+    "type" : [ "null", "int" ],
+    "doc" : "DataTypeID",
+    "default" : null
+  }, {
+    "name" : "ValueLength",
+    "type" : [ "null", "int" ],
+    "doc" : "ValueLength",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "IsComposite",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsComposite",
+    "default" : null
+  }, {
+    "name" : "IsMetric",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsMetric",
+    "default" : null
+  }, {
+    "name" : "PeriodType",
+    "type" : [ "null", "string" ],
+    "doc" : "PeriodType",
+    "default" : null
+  } ]
+}

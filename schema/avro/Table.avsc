@@ -1,0 +1,52 @@
+{
+  "type" : "record",
+  "name" : "Table",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Table",
+  "fields" : [ {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "TableID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableID",
+    "default" : null
+  }, {
+    "name" : "IsAbstract",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsAbstract",
+    "default" : null
+  }, {
+    "name" : "HasOpenColumns",
+    "type" : [ "null", "boolean" ],
+    "doc" : "HasOpenColumns",
+    "default" : null
+  }, {
+    "name" : "HasOpenRows",
+    "type" : [ "null", "boolean" ],
+    "doc" : "HasOpenRows",
+    "default" : null
+  }, {
+    "name" : "HasOpenSheets",
+    "type" : [ "null", "boolean" ],
+    "doc" : "HasOpenSheets",
+    "default" : null
+  }, {
+    "name" : "IsNormalised",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsNormalised",
+    "default" : null
+  }, {
+    "name" : "IsFlat",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsFlat",
+    "default" : null
+  } ]
+}

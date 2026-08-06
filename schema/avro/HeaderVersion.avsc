@@ -1,0 +1,62 @@
+{
+  "type" : "record",
+  "name" : "HeaderVersion",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: HeaderVersion",
+  "fields" : [ {
+    "name" : "HeaderID",
+    "type" : [ "null", "int" ],
+    "doc" : "HeaderID",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Label",
+    "type" : [ "null", "string" ],
+    "doc" : "Label",
+    "default" : null
+  }, {
+    "name" : "PropertyID",
+    "type" : [ "null", "int" ],
+    "doc" : "PropertyID",
+    "default" : null
+  }, {
+    "name" : "ContextID",
+    "type" : [ "null", "int" ],
+    "doc" : "ContextID",
+    "default" : null
+  }, {
+    "name" : "SubCategoryVID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubCategoryVID",
+    "default" : null
+  }, {
+    "name" : "KeyVariableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "KeyVariableVID",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "HeaderVID",
+    "type" : [ "null", "int" ],
+    "doc" : "HeaderVID",
+    "default" : null
+  } ]
+}

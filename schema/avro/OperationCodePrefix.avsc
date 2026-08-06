@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "OperationCodePrefix",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: OperationCodePrefix",
+  "fields" : [ {
+    "name" : "FrameworkID",
+    "type" : [ "null", "int" ],
+    "doc" : "FrameworkID",
+    "default" : null
+  }, {
+    "name" : "OperationCodePrefixID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperationCodePrefixID",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "ListName",
+    "type" : [ "null", "string" ],
+    "doc" : "ListName",
+    "default" : null
+  } ]
+}

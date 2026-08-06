@@ -1,0 +1,32 @@
+{
+  "type" : "record",
+  "name" : "OperatorArgument",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: OperatorArgument",
+  "fields" : [ {
+    "name" : "OperatorID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperatorID",
+    "default" : null
+  }, {
+    "name" : "Order",
+    "type" : [ "null", "int" ],
+    "doc" : "Order",
+    "default" : null
+  }, {
+    "name" : "ArgumentID",
+    "type" : [ "null", "int" ],
+    "doc" : "ArgumentID",
+    "default" : null
+  }, {
+    "name" : "IsMandatory",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsMandatory",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  } ]
+}

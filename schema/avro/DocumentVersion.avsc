@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "DocumentVersion",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: DocumentVersion",
+  "fields" : [ {
+    "name" : "DocumentID",
+    "type" : [ "null", "int" ],
+    "doc" : "DocumentID",
+    "default" : null
+  }, {
+    "name" : "PublicationDate",
+    "type" : [ "null", "string" ],
+    "doc" : "PublicationDate",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "DocumentVID",
+    "type" : [ "null", "int" ],
+    "doc" : "DocumentVID",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Version",
+    "type" : [ "null", "string" ],
+    "doc" : "Version",
+    "default" : null
+  } ]
+}

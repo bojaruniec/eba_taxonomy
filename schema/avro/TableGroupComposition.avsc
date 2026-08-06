@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "TableGroupComposition",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: TableGroupComposition",
+  "fields" : [ {
+    "name" : "TableGroupID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableGroupID",
+    "default" : null
+  }, {
+    "name" : "TableID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableID",
+    "default" : null
+  }, {
+    "name" : "Order",
+    "type" : [ "null", "int" ],
+    "doc" : "Order",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}

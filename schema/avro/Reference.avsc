@@ -1,0 +1,22 @@
+{
+  "type" : "record",
+  "name" : "Reference",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Reference",
+  "fields" : [ {
+    "name" : "SubdivisionID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubdivisionID",
+    "default" : null
+  }, {
+    "name" : "ConceptGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "ConceptGUID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}

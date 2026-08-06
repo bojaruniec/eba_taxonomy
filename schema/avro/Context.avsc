@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "Context",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Context",
+  "fields" : [ {
+    "name" : "Signature",
+    "type" : [ "null", "string" ],
+    "doc" : "Signature",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "ContextID",
+    "type" : [ "null", "int" ],
+    "doc" : "ContextID",
+    "default" : null
+  } ]
+}

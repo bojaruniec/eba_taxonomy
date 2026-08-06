@@ -1,0 +1,52 @@
+{
+  "type" : "record",
+  "name" : "Subdivision",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Subdivision",
+  "fields" : [ {
+    "name" : "DocumentVID",
+    "type" : [ "null", "int" ],
+    "doc" : "DocumentVID",
+    "default" : null
+  }, {
+    "name" : "SubdivisionTypeID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubdivisionTypeID",
+    "default" : null
+  }, {
+    "name" : "ParentSubdivisionID",
+    "type" : [ "null", "int" ],
+    "doc" : "ParentSubdivisionID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "SubdivisionID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubdivisionID",
+    "default" : null
+  }, {
+    "name" : "Number",
+    "type" : [ "null", "string" ],
+    "doc" : "Number",
+    "default" : null
+  }, {
+    "name" : "StructurePath",
+    "type" : [ "null", "string" ],
+    "doc" : "StructurePath",
+    "default" : null
+  }, {
+    "name" : "TextExcerpt",
+    "type" : [ "null", "string" ],
+    "doc" : "TextExcerpt",
+    "default" : null
+  } ]
+}

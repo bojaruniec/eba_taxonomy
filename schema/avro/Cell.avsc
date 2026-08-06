@@ -1,0 +1,42 @@
+{
+  "type" : "record",
+  "name" : "Cell",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Cell",
+  "fields" : [ {
+    "name" : "TableID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableID",
+    "default" : null
+  }, {
+    "name" : "ColumnID",
+    "type" : [ "null", "int" ],
+    "doc" : "ColumnID",
+    "default" : null
+  }, {
+    "name" : "RowID",
+    "type" : [ "null", "int" ],
+    "doc" : "RowID",
+    "default" : null
+  }, {
+    "name" : "SheetID",
+    "type" : [ "null", "int" ],
+    "doc" : "SheetID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "CellID",
+    "type" : [ "null", "int" ],
+    "doc" : "CellID",
+    "default" : null
+  } ]
+}
