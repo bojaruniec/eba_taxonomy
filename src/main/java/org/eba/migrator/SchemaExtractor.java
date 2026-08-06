@@ -69,7 +69,6 @@ public final class SchemaExtractor {
                     def.append(dquote(col.getName()));
                     def.append(" ");
                     def.append(TypeMapper.toSqlType(col));
-                    if (col.isRequired()) def.append(" NOT NULL");
                     colDefs.add(def.toString());
                 }
                 tablesSql.append(String.join(",\n", colDefs));

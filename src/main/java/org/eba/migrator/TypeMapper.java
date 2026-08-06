@@ -72,31 +72,35 @@ public final class TypeMapper {
      * given Jackcess DataType.  All fields are nullable to accommodate Access
      * tables where NOT NULL is not always enforced.
      */
-    public static Schema toAvroFieldSchema(DataType dt) {
-        switch (dt) {
+    private static Schema nullable(Schema.Type type) {
+        return Schema.createUnion(Schema.create(Schema.Type.NULL), Schema.create(type));
+    }
+
+    public static Schema toAvroFieldSchema(DataType type) {
+        switch (type) {
             case TEXT:
             case MEMO:
             case GUID:
             case SHORT_DATE_TIME:
             case MONEY:
             case COMPLEX_TYPE:
-                return SchemaBuilder.nullable().stringType();
+                return nullable(Schema.Type.STRING);
             case BYTE:
             case INT:
             case LONG:
-                return SchemaBuilder.nullable().intType();
+                return nullable(Schema.Type.INT);
             case DOUBLE:
             case NUMERIC:
-                return SchemaBuilder.nullable().doubleType();
+                return nullable(Schema.Type.DOUBLE);
             case FLOAT:
-                return SchemaBuilder.nullable().floatType();
+                return nullable(Schema.Type.FLOAT);
             case BOOLEAN:
-                return SchemaBuilder.nullable().booleanType();
+                return nullable(Schema.Type.BOOLEAN);
             case BINARY:
             case OLE:
-                return SchemaBuilder.nullable().bytesType();
+                return nullable(Schema.Type.BYTES);
             default:
-                return SchemaBuilder.nullable().stringType();
+                return nullable(Schema.Type.STRING);
         }
     }
 

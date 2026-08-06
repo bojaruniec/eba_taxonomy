@@ -107,6 +107,16 @@ public class Main {
             log.info("Exported {} Avro schema file(s) to {}", avroSchemas.size(), avroDir);
 
             // ─────────────────────────────────────────────────────────────────
+            // Phase 1a.2 – Native Relationship extraction
+            // ─────────────────────────────────────────────────────────────────
+            log.info("─── Phase 1a.2: Native Foreign Key extraction ───");
+            try {
+                RelationshipExtractor.extractRelationships(db, parquetDir);
+            } catch (Exception e) {
+                log.error("Failed to extract relationships natively: {}", e.getMessage(), e);
+            }
+
+            // ─────────────────────────────────────────────────────────────────
             // Phase 1b – Data extraction (CSV sample + full Parquet)
             // ─────────────────────────────────────────────────────────────────
             log.info("─── Phase 1b: Data extraction (CSV + Parquet) ───");

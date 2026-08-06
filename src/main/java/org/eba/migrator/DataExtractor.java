@@ -78,7 +78,7 @@ public final class DataExtractor {
         // container without requiring a live Hadoop cluster.
         Configuration conf = new Configuration();
         conf.set("fs.defaultFS", "file:///");
-        conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
+        conf.set("fs.file.impl", org.apache.hadoop.fs.RawLocalFileSystem.class.getName());
         conf.set("fs.file.impl.disable.cache", "true");
         // Suppress Hadoop's attempt to load native libraries in Alpine
         conf.set("io.native.lib.available", "false");

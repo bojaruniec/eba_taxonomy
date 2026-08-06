@@ -20,7 +20,7 @@
         <jackcess.version>4.0.5</jackcess.version>
         <commons-csv.version>1.11.0</commons-csv.version>
         <slf4j.version>2.0.13</slf4j.version>
-        <mainClass>org.eba.migrator.AccessToCsvExporter</mainClass>
+        <mainClass>org.eba.migrator.Main</mainClass>
     </properties>
 
     <dependencies>
@@ -36,6 +36,40 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-csv</artifactId>
             <version>${commons-csv.version}</version>
+        </dependency>
+
+        <!-- Avro and Parquet -->
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>1.11.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.parquet</groupId>
+            <artifactId>parquet-avro</artifactId>
+            <version>1.13.1</version>
+        </dependency>
+        
+        <!-- Hadoop Core for Parquet Local FS writing -->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>3.3.6</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-mapreduce-client-core</artifactId>
+            <version>3.3.6</version>
         </dependency>
 
         <!-- SLF4J + Logback for structured logging -->

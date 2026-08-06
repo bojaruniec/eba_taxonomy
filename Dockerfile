@@ -11,7 +11,7 @@ RUN mvn clean package -DskipTests
 # Stage 2: Runtime
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
-COPY --from=builder /app/target/*-jar-with-dependencies.jar migrator.jar
+COPY --from=builder /app/target/eba-taxonomy-migrator-1.0.0.jar migrator.jar
 
 # Run the app
 CMD ["java", "-jar", "migrator.jar"]
