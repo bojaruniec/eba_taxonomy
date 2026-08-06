@@ -1,0 +1,142 @@
+{
+  "type" : "record",
+  "name" : "ModelViolations",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: ModelViolations",
+  "fields" : [ {
+    "name" : "TableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableVID",
+    "default" : null
+  }, {
+    "name" : "OldTableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "OldTableVID",
+    "default" : null
+  }, {
+    "name" : "HeaderID",
+    "type" : [ "null", "int" ],
+    "doc" : "HeaderID",
+    "default" : null
+  }, {
+    "name" : "HeaderVID",
+    "type" : [ "null", "int" ],
+    "doc" : "HeaderVID",
+    "default" : null
+  }, {
+    "name" : "OldHeaderVID",
+    "type" : [ "null", "int" ],
+    "doc" : "OldHeaderVID",
+    "default" : null
+  }, {
+    "name" : "HeaderPropertyID",
+    "type" : [ "null", "int" ],
+    "doc" : "HeaderPropertyID",
+    "default" : null
+  }, {
+    "name" : "HeaderSubcategoryID",
+    "type" : [ "null", "int" ],
+    "doc" : "HeaderSubcategoryID",
+    "default" : null
+  }, {
+    "name" : "HeaderContextID",
+    "type" : [ "null", "int" ],
+    "doc" : "HeaderContextID",
+    "default" : null
+  }, {
+    "name" : "CategoryID",
+    "type" : [ "null", "int" ],
+    "doc" : "CategoryID",
+    "default" : null
+  }, {
+    "name" : "ItemID",
+    "type" : [ "null", "int" ],
+    "doc" : "ItemID",
+    "default" : null
+  }, {
+    "name" : "CellID",
+    "type" : [ "null", "int" ],
+    "doc" : "CellID",
+    "default" : null
+  }, {
+    "name" : "Cell2ID",
+    "type" : [ "null", "int" ],
+    "doc" : "Cell2ID",
+    "default" : null
+  }, {
+    "name" : "VVEndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "VVEndReleaseID",
+    "default" : null
+  }, {
+    "name" : "isBlocking",
+    "type" : [ "null", "boolean" ],
+    "doc" : "isBlocking",
+    "default" : null
+  }, {
+    "name" : "KeyHeader",
+    "type" : [ "null", "boolean" ],
+    "doc" : "KeyHeader",
+    "default" : null
+  }, {
+    "name" : "ViolationCode",
+    "type" : [ "null", "string" ],
+    "doc" : "ViolationCode",
+    "default" : null
+  }, {
+    "name" : "Violation",
+    "type" : [ "null", "string" ],
+    "doc" : "Violation",
+    "default" : null
+  }, {
+    "name" : "TableCode",
+    "type" : [ "null", "string" ],
+    "doc" : "TableCode",
+    "default" : null
+  }, {
+    "name" : "HeaderCode",
+    "type" : [ "null", "string" ],
+    "doc" : "HeaderCode",
+    "default" : null
+  }, {
+    "name" : "HeaderDirection",
+    "type" : [ "null", "string" ],
+    "doc" : "HeaderDirection",
+    "default" : null
+  }, {
+    "name" : "HeaderPropertyCode",
+    "type" : [ "null", "string" ],
+    "doc" : "HeaderPropertyCode",
+    "default" : null
+  }, {
+    "name" : "HeaderSubcategoryName",
+    "type" : [ "null", "string" ],
+    "doc" : "HeaderSubcategoryName",
+    "default" : null
+  }, {
+    "name" : "CategoryCode",
+    "type" : [ "null", "string" ],
+    "doc" : "CategoryCode",
+    "default" : null
+  }, {
+    "name" : "ItemCode",
+    "type" : [ "null", "string" ],
+    "doc" : "ItemCode",
+    "default" : null
+  }, {
+    "name" : "CellCode",
+    "type" : [ "null", "string" ],
+    "doc" : "CellCode",
+    "default" : null
+  }, {
+    "name" : "Cell2Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Cell2Code",
+    "default" : null
+  }, {
+    "name" : "NewAspect",
+    "type" : [ "null", "string" ],
+    "doc" : "NewAspect",
+    "default" : null
+  } ]
+}

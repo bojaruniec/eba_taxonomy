@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EBA Taxonomy Explorer</title>
+  <meta name="description" content="Interactive DuckDB-Wasm powered explorer for EBA DPM taxonomy Parquet data." />
+
+  <!-- Import Map for bare modules -->
+  <script type="importmap">
+    {
+      "imports": {
+        "apache-arrow": "https://cdn.jsdelivr.net/npm/apache-arrow@18.1.0/+esm"
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tabulator CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/tabulator-tables@6.2.1/dist/css/tabulator_midnight.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="splash" class="splash">
+    <div class="spinner"></div>
+    <div class="splash-title">EBA Taxonomy Explorer</div>
+    <div class="splash-sub" id="splash-status">Initialising DuckDB-Wasm…</div>
+  </div>
+
+  <div class="shell">
+    <header>
+      <div class="logo">
+        <div class="logo-icon">🦆</div>
+        <div>
+          <div class="logo-text">EBA Taxonomy Explorer</div>
+          <div class="logo-sub">DuckDB-Wasm · Parquet · In-Browser</div>
+        </div>
+      </div>
+      <div class="header-spacer"></div>
+      <button class="btn btn-ghost" id="btn-info" style="margin-right:10px;">ⓘ About & Info</button>
+      <div class="status-pill">
+        <div class="status-dot" id="status-dot"></div>
+        <span id="status-text">Initialising…</span>
+      </div>
+    </header>
+
+    <div class="body">
+      <!-- Sidebar: table list -->
+      <aside>
+        <div class="sidebar-header">
+          <div class="sidebar-title">Tables</div>
+          <div class="search-wrap">
+            <span class="search-icon">⌕</span>
+            <input type="text" id="table-search" placeholder="Filter tables…" autocomplete="off" />
+          </div>
+        </div>
+        <div class="table-count" id="table-count"></div>
+        <div class="table-list" id="table-list"></div>
+      </aside>
+
+      <!-- Main content -->
+      <main>
+        <!-- Info bar -->
+        <div class="info-bar">
+          <span class="table-name" id="table-name-display">—</span>
+          <span class="badge accent" id="badge-rows" style="display:none">— rows</span>
+          <span class="badge" id="badge-cols" style="display:none">— cols</span>
+          <div class="info-spacer"></div>
+          <button class="btn btn-ghost" id="btn-export" disabled>⬇ Export CSV</button>
+        </div>
+
+        <!-- SQL editor (collapsible) -->
+        <div class="sql-section">
+          <div class="sql-toggle" id="sql-toggle">
+            <span class="chevron">▶</span> SQL Editor
+          </div>
+          <div class="sql-editor-wrap" id="sql-editor-wrap">
+            <textarea id="sql-input" spellcheck="false" placeholder="SELECT * FROM current_table LIMIT 100"></textarea>
+            <div class="sql-actions">
+              <button class="btn btn-primary" id="btn-run">▶ Run Query</button>
+              <button class="btn btn-ghost" id="btn-reset">↺ Reset</button>
+            </div>
+            <div class="error-msg" id="sql-error" style="display:none"></div>
+          </div>
+        </div>
+
+        <!-- Tabulator grid -->
+        <div class="grid-wrap">
+          <div id="data-grid"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- About / Info Modal -->
+  <div class="modal-overlay" id="info-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">About EBA Taxonomy Explorer</div>
+        <button class="modal-close" id="btn-close-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p>This is a 100% static, serverless Data Explorer for the EBA DPM Taxonomy.</p>
+        
+        <p><strong>Content Lineage & Source:</strong></p>
+        <ul class="modal-list">
+          <li><strong>Source File:</strong> DPM2 Database_v 4_3_20260622.accdb</li>
+          <li><strong>Framework Version:</strong> EBA Reporting Framework 4.3</li>
+          <li><strong>MD5 Checksum:</strong> e20f610783410926ec2582ea0ccfb532</li>
+          <li><strong>Creation Date:</strong> 2026-06-22</li>
+          <li><strong>Source Link:</strong> <a href="https://ebprstaewspublic01.blob.core.windows.net/public/tools-prod/documents/Big_Files/files/Reporting%20framework%204.3/DPM2%20Database_v%204_3.zip" target="_blank">Download ZIP</a></li>
+        </ul>
+
+        <p><strong>Open Source Licenses:</strong></p>
+        <ul class="modal-list">
+          <li><strong>DuckDB-Wasm:</strong> MIT License</li>
+          <li><strong>Tabulator:</strong> MIT License</li>
+          <li><strong>Apache Arrow:</strong> Apache 2.0 License</li>
+        </ul>
+        <p>All dependencies used are permissive and allow for free commercial and private use without license violation.</p>
+
+        <p><strong>Attribution:</strong><br>
+        Developed by Piotr, with assistance from AI (Antigravity). AI-generated code snippets in this context are not subject to restrictive copyrights and do not violate open-source licenses.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btn-modal-ok">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabulator JS -->
+  <script src="https://unpkg.com/tabulator-tables@6.2.1/dist/js/tabulator.min.js"></script>
+
+  <!-- App logic -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

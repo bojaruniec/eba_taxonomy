@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "ContextComposition",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: ContextComposition",
+  "fields" : [ {
+    "name" : "ContextID",
+    "type" : [ "null", "int" ],
+    "doc" : "ContextID",
+    "default" : null
+  }, {
+    "name" : "PropertyID",
+    "type" : [ "null", "int" ],
+    "doc" : "PropertyID",
+    "default" : null
+  }, {
+    "name" : "ItemID",
+    "type" : [ "null", "int" ],
+    "doc" : "ItemID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}

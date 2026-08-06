@@ -1,0 +1,47 @@
+{
+  "type" : "record",
+  "name" : "SubCategoryItem",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: SubCategoryItem",
+  "fields" : [ {
+    "name" : "ItemID",
+    "type" : [ "null", "int" ],
+    "doc" : "ItemID",
+    "default" : null
+  }, {
+    "name" : "SubCategoryVID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubCategoryVID",
+    "default" : null
+  }, {
+    "name" : "Order",
+    "type" : [ "null", "int" ],
+    "doc" : "Order",
+    "default" : null
+  }, {
+    "name" : "ParentItemID",
+    "type" : [ "null", "int" ],
+    "doc" : "ParentItemID",
+    "default" : null
+  }, {
+    "name" : "ComparisonOperatorID",
+    "type" : [ "null", "int" ],
+    "doc" : "ComparisonOperatorID",
+    "default" : null
+  }, {
+    "name" : "ArithmeticOperatorID",
+    "type" : [ "null", "int" ],
+    "doc" : "ArithmeticOperatorID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "Label",
+    "type" : [ "null", "string" ],
+    "doc" : "Label",
+    "default" : null
+  } ]
+}

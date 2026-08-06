@@ -1,0 +1,67 @@
+{
+  "type" : "record",
+  "name" : "TableAssociation",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: TableAssociation",
+  "fields" : [ {
+    "name" : "ChildTableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "ChildTableVID",
+    "default" : null
+  }, {
+    "name" : "ParentTableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "ParentTableVID",
+    "default" : null
+  }, {
+    "name" : "SubtypeDiscriminator",
+    "type" : [ "null", "int" ],
+    "doc" : "SubtypeDiscriminator",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "AssociationID",
+    "type" : [ "null", "int" ],
+    "doc" : "AssociationID",
+    "default" : null
+  }, {
+    "name" : "IsIdentifying",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsIdentifying",
+    "default" : null
+  }, {
+    "name" : "IsSubtype",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsSubtype",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  }, {
+    "name" : "ParentCardinalityAndOptionality",
+    "type" : [ "null", "string" ],
+    "doc" : "ParentCardinalityAndOptionality",
+    "default" : null
+  }, {
+    "name" : "ChildCardinalityAndOptionality",
+    "type" : [ "null", "string" ],
+    "doc" : "ChildCardinalityAndOptionality",
+    "default" : null
+  } ]
+}

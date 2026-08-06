@@ -1,0 +1,42 @@
+{
+  "type" : "record",
+  "name" : "OperationScope",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: OperationScope",
+  "fields" : [ {
+    "name" : "OperationVID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperationVID",
+    "default" : null
+  }, {
+    "name" : "FromSubmissionDate",
+    "type" : [ "null", "string" ],
+    "doc" : "FromSubmissionDate",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OperationScopeID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperationScopeID",
+    "default" : null
+  }, {
+    "name" : "CreatedReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "CreatedReleaseID",
+    "default" : null
+  }, {
+    "name" : "IsActive",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsActive",
+    "default" : null
+  }, {
+    "name" : "Severity",
+    "type" : [ "null", "string" ],
+    "doc" : "Severity",
+    "default" : null
+  } ]
+}

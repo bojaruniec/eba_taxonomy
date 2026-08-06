@@ -1,0 +1,42 @@
+{
+  "type" : "record",
+  "name" : "SubCategory",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: SubCategory",
+  "fields" : [ {
+    "name" : "CategoryID",
+    "type" : [ "null", "int" ],
+    "doc" : "CategoryID",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "SubCategoryID",
+    "type" : [ "null", "int" ],
+    "doc" : "SubCategoryID",
+    "default" : null
+  } ]
+}

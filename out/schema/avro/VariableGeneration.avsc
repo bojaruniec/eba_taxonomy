@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "VariableGeneration",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: VariableGeneration",
+  "fields" : [ {
+    "name" : "StartDate",
+    "type" : [ "null", "string" ],
+    "doc" : "StartDate",
+    "default" : null
+  }, {
+    "name" : "EndDate",
+    "type" : [ "null", "string" ],
+    "doc" : "EndDate",
+    "default" : null
+  }, {
+    "name" : "ReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "ReleaseID",
+    "default" : null
+  }, {
+    "name" : "VariableGenerationID",
+    "type" : [ "null", "int" ],
+    "doc" : "VariableGenerationID",
+    "default" : null
+  }, {
+    "name" : "Status",
+    "type" : [ "null", "string" ],
+    "doc" : "Status",
+    "default" : null
+  }, {
+    "name" : "Error",
+    "type" : [ "null", "string" ],
+    "doc" : "Error",
+    "default" : null
+  } ]
+}

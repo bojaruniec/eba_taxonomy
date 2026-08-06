@@ -1,0 +1,9 @@
+services:
+  migrator:
+    build: .
+    volumes:
+      - ./inp:/app/inp
+      - ./out:/app/out
+    environment:
+      - DB_PATH=/app/inp/DPM2 Database_v 4_3_20260622.accdb
+      - OUT_DIR=/app/out

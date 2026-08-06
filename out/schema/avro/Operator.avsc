@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "Operator",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Operator",
+  "fields" : [ {
+    "name" : "OperatorID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperatorID",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Symbol",
+    "type" : [ "null", "string" ],
+    "doc" : "Symbol",
+    "default" : null
+  }, {
+    "name" : "Type",
+    "type" : [ "null", "string" ],
+    "doc" : "Type",
+    "default" : null
+  } ]
+}

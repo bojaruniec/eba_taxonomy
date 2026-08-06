@@ -1,0 +1,22 @@
+{
+  "type" : "record",
+  "name" : "OperationScopeComposition",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: OperationScopeComposition",
+  "fields" : [ {
+    "name" : "OperationScopeID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperationScopeID",
+    "default" : null
+  }, {
+    "name" : "ModuleVID",
+    "type" : [ "null", "int" ],
+    "doc" : "ModuleVID",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}

@@ -1,0 +1,17 @@
+{
+  "type" : "record",
+  "name" : "Language",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Language",
+  "fields" : [ {
+    "name" : "LanguageCode",
+    "type" : [ "null", "int" ],
+    "doc" : "LanguageCode",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  } ]
+}

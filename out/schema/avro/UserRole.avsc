@@ -1,0 +1,17 @@
+{
+  "type" : "record",
+  "name" : "UserRole",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: UserRole",
+  "fields" : [ {
+    "name" : "UserID",
+    "type" : [ "null", "int" ],
+    "doc" : "UserID",
+    "default" : null
+  }, {
+    "name" : "RoleID",
+    "type" : [ "null", "int" ],
+    "doc" : "RoleID",
+    "default" : null
+  } ]
+}

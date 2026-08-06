@@ -1,0 +1,17 @@
+{
+  "type" : "record",
+  "name" : "Role",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Role",
+  "fields" : [ {
+    "name" : "RoleID",
+    "type" : [ "null", "int" ],
+    "doc" : "RoleID",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  } ]
+}

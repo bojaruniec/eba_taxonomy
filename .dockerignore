@@ -1,0 +1,7 @@
+# Never send the large Access database into the Docker build context
+inp/
+out/
+target/
+.agent/
+*.md
+.git/

@@ -1,0 +1,57 @@
+{
+  "type" : "record",
+  "name" : "TableGroup",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: TableGroup",
+  "fields" : [ {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "ParentTableGroupID",
+    "type" : [ "null", "int" ],
+    "doc" : "ParentTableGroupID",
+    "default" : null
+  }, {
+    "name" : "OwnerID",
+    "type" : [ "null", "int" ],
+    "doc" : "OwnerID",
+    "default" : null
+  }, {
+    "name" : "TableGroupID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableGroupID",
+    "default" : null
+  }, {
+    "name" : "Code",
+    "type" : [ "null", "string" ],
+    "doc" : "Code",
+    "default" : null
+  }, {
+    "name" : "Name",
+    "type" : [ "null", "string" ],
+    "doc" : "Name",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  }, {
+    "name" : "Type",
+    "type" : [ "null", "string" ],
+    "doc" : "Type",
+    "default" : null
+  } ]
+}

@@ -1,0 +1,37 @@
+{
+  "type" : "record",
+  "name" : "Translation",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: Translation",
+  "fields" : [ {
+    "name" : "ConceptGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "ConceptGUID",
+    "default" : null
+  }, {
+    "name" : "AttributeID",
+    "type" : [ "null", "int" ],
+    "doc" : "AttributeID",
+    "default" : null
+  }, {
+    "name" : "TranslatorID",
+    "type" : [ "null", "int" ],
+    "doc" : "TranslatorID",
+    "default" : null
+  }, {
+    "name" : "LanguageCode",
+    "type" : [ "null", "int" ],
+    "doc" : "LanguageCode",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "Translation",
+    "type" : [ "null", "string" ],
+    "doc" : "Translation",
+    "default" : null
+  } ]
+}

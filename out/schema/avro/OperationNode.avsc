@@ -1,0 +1,67 @@
+{
+  "type" : "record",
+  "name" : "OperationNode",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: OperationNode",
+  "fields" : [ {
+    "name" : "OperationVID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperationVID",
+    "default" : null
+  }, {
+    "name" : "ParentNodeID",
+    "type" : [ "null", "int" ],
+    "doc" : "ParentNodeID",
+    "default" : null
+  }, {
+    "name" : "OperatorID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperatorID",
+    "default" : null
+  }, {
+    "name" : "ArgumentID",
+    "type" : [ "null", "int" ],
+    "doc" : "ArgumentID",
+    "default" : null
+  }, {
+    "name" : "AbsoluteTolerance",
+    "type" : [ "null", "double" ],
+    "doc" : "AbsoluteTolerance",
+    "default" : null
+  }, {
+    "name" : "RelativeTolerance",
+    "type" : [ "null", "double" ],
+    "doc" : "RelativeTolerance",
+    "default" : null
+  }, {
+    "name" : "NodeID",
+    "type" : [ "null", "int" ],
+    "doc" : "NodeID",
+    "default" : null
+  }, {
+    "name" : "UseIntervalArithmetics",
+    "type" : [ "null", "boolean" ],
+    "doc" : "UseIntervalArithmetics",
+    "default" : null
+  }, {
+    "name" : "IsLeaf",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsLeaf",
+    "default" : null
+  }, {
+    "name" : "FallbackValue",
+    "type" : [ "null", "string" ],
+    "doc" : "FallbackValue",
+    "default" : null
+  }, {
+    "name" : "OperandType",
+    "type" : [ "null", "string" ],
+    "doc" : "OperandType",
+    "default" : null
+  }, {
+    "name" : "Scalar",
+    "type" : [ "null", "string" ],
+    "doc" : "Scalar",
+    "default" : null
+  } ]
+}

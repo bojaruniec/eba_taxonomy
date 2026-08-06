@@ -1,0 +1,15 @@
+                            # content
+                            # EOF
+                            parts = cmd.split("<< 'EOF'")
+                            if len(parts) == 2 or len(parts) == 3:
+                                path_part = parts[0]
+                                if '>' in path_part:
+                                    path = path_part.split('>')[-1].strip().split(' ')[0]
+                                    if path.startswith('/home/piotr/eba_taxonomy/'):
+                                        content = parts[1].split('EOF')[0].strip('\n')
+                                        safe_path = os.path.join('recovered_src', os.path.basename(path))
+                                        with open(safe_path, 'w') as out:
+                                            out.write(content)
+                                        print(f"Recovered {os.path.basename(path)}")
+        except Exception as e:
+            pass

@@ -1,0 +1,62 @@
+{
+  "type" : "record",
+  "name" : "OperationVersion",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: OperationVersion",
+  "fields" : [ {
+    "name" : "OperationVID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperationVID",
+    "default" : null
+  }, {
+    "name" : "OperationID",
+    "type" : [ "null", "int" ],
+    "doc" : "OperationID",
+    "default" : null
+  }, {
+    "name" : "PreconditionOperationVID",
+    "type" : [ "null", "int" ],
+    "doc" : "PreconditionOperationVID",
+    "default" : null
+  }, {
+    "name" : "SeverityOperationVID",
+    "type" : [ "null", "int" ],
+    "doc" : "SeverityOperationVID",
+    "default" : null
+  }, {
+    "name" : "StartReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "StartReleaseID",
+    "default" : null
+  }, {
+    "name" : "EndReleaseID",
+    "type" : [ "null", "int" ],
+    "doc" : "EndReleaseID",
+    "default" : null
+  }, {
+    "name" : "Expression",
+    "type" : [ "null", "string" ],
+    "doc" : "Expression",
+    "default" : null
+  }, {
+    "name" : "Description",
+    "type" : [ "null", "string" ],
+    "doc" : "Description",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  }, {
+    "name" : "Endorsement",
+    "type" : [ "null", "string" ],
+    "doc" : "Endorsement",
+    "default" : null
+  }, {
+    "name" : "IsVariantApproved",
+    "type" : [ "null", "boolean" ],
+    "doc" : "IsVariantApproved",
+    "default" : null
+  } ]
+}

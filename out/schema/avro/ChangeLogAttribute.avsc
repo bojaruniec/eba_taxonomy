@@ -1,0 +1,32 @@
+{
+  "type" : "record",
+  "name" : "ChangeLogAttribute",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: ChangeLogAttribute",
+  "fields" : [ {
+    "name" : "ActionID",
+    "type" : [ "null", "int" ],
+    "doc" : "ActionID",
+    "default" : null
+  }, {
+    "name" : "AttributeID",
+    "type" : [ "null", "int" ],
+    "doc" : "AttributeID",
+    "default" : null
+  }, {
+    "name" : "ChangeLogAttributeID",
+    "type" : [ "null", "int" ],
+    "doc" : "ChangeLogAttributeID",
+    "default" : null
+  }, {
+    "name" : "OldValue",
+    "type" : [ "null", "string" ],
+    "doc" : "OldValue",
+    "default" : null
+  }, {
+    "name" : "NewValue",
+    "type" : [ "null", "string" ],
+    "doc" : "NewValue",
+    "default" : null
+  } ]
+}

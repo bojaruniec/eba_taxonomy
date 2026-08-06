@@ -1,0 +1,32 @@
+{
+  "type" : "record",
+  "name" : "ModuleVersionComposition",
+  "namespace" : "org.eba.taxonomy",
+  "doc" : "EBA taxonomy table: ModuleVersionComposition",
+  "fields" : [ {
+    "name" : "ModuleVID",
+    "type" : [ "null", "int" ],
+    "doc" : "ModuleVID",
+    "default" : null
+  }, {
+    "name" : "TableID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableID",
+    "default" : null
+  }, {
+    "name" : "TableVID",
+    "type" : [ "null", "int" ],
+    "doc" : "TableVID",
+    "default" : null
+  }, {
+    "name" : "Order",
+    "type" : [ "null", "int" ],
+    "doc" : "Order",
+    "default" : null
+  }, {
+    "name" : "RowGUID",
+    "type" : [ "null", "string" ],
+    "doc" : "RowGUID",
+    "default" : null
+  } ]
+}
