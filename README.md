@@ -1,5 +1,7 @@
 # EBA Taxonomy Migrator & Explorer
 
+🚀 **[Live Data Explorer (GitHub Pages)](https://bojaruniec.github.io/eba_taxonomy/)**
+
 This project provides an end-to-end pipeline to migrate the European Banking Authority (EBA) DPM Taxonomy from a legacy MS Access database (`.accdb`) into a modern, web-accessible Parquet Data Explorer.
 
 The project is split into two phases:
@@ -36,4 +38,6 @@ python3 -m http.server 8080
 Then navigate to `http://localhost:8080` in your browser.
 
 ### 3. Deploying to GitHub Pages
-The web application is designed to be hosted on GitHub Pages. The `out/index.html`, `out/app.js`, `out/config.js`, and the `out/parquet/` directory must be committed to the repository (see `.gitignore`). Once pushed, configure GitHub Pages to serve from the root (or whichever directory you place the `out/` contents into), and the explorer will work seamlessly.
+The web application is fully automated to deploy via GitHub Pages. A GitHub Actions workflow (`.github/workflows/pages.yml`) is included, which automatically bundles and publishes the `out/` directory whenever code is pushed to the `main` branch.
+
+To view the live site, visit: **[https://bojaruniec.github.io/eba_taxonomy/](https://bojaruniec.github.io/eba_taxonomy/)**
