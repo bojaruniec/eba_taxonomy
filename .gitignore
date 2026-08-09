@@ -32,3 +32,10 @@ out/csv/
 
 # Agent customizations
 .agent/
+
+# Reports
+reports/*
+out/parquet/*.parquet  
+db/*
+docs/DuckDB.mhtml
+docs/Full_taxonomy.zip

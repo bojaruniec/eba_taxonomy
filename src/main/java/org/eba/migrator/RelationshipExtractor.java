@@ -41,6 +41,7 @@ public final class RelationshipExtractor {
                 .name("source_column").type().stringType().noDefault()
                 .name("target_table").type().stringType().noDefault()
                 .name("target_column").type().stringType().noDefault()
+                .name("is_enforced").type().booleanType().noDefault()
                 .endRecord();
 
         Configuration conf = new Configuration();
@@ -82,6 +83,7 @@ public final class RelationshipExtractor {
                     record.put("source_column", fromCol);
                     record.put("target_table", toTable);
                     record.put("target_column", toCol);
+                    record.put("is_enforced", rel.hasReferentialIntegrity());
 
                     writer.write(record);
                     count++;
