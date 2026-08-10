@@ -157,6 +157,28 @@ header {
 }
 .form-select:focus { border-color: var(--accent); }
 
+.select-report-header {
+  background-color: var(--bg-surface-2);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.select-report-header:hover {
+  border-color: var(--accent);
+  background-color: var(--bg-surface-3);
+}
+.select-report-header option {
+  background-color: var(--bg-surface-2);
+  color: var(--text-main);
+}
+
 /* Body Layout */
 .body {
   display: flex;

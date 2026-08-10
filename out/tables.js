@@ -895,21 +895,37 @@ function setupEventListeners() {
   btnCloseModal.addEventListener('click', () => infoModal.classList.remove('open'));
   btnModalOk.addEventListener('click', () => infoModal.classList.remove('open'));
 
-  // Report Upload
+  // Report Upload & Sample Reports
   btnLoadReport.addEventListener('click', () => reportFileInput.click());
   reportFileInput.addEventListener('change', handleReportUpload);
 
-  const btnSampleCodis = document.getElementById('btn-sample-codis');
-  const btnSampleFindis = document.getElementById('btn-sample-findis');
+  const sampleReportSelect = document.getElementById('sample-report-select');
+  const SAMPLE_REPORTS = {
+    pl_codis: {
+      url: 'reports/codis/P4GTT6GF1W40CVIMFR43.CON_PL_PILLAR3020000_CODIS_2025-12-31_20260325144416216.zip',
+      moduleCode: 'CODIS'
+    },
+    pl_findis: {
+      url: 'reports/codis/P4GTT6GF1W40CVIMFR43.CON_PL_PILLAR3020000_FINDIS_2025-12-31_20260325150838169.zip',
+      moduleCode: 'FINDIS'
+    },
+    fr_codis: {
+      url: 'reports/codis/R0MUWSFPU8MPRO8K5P83.CON_FR_PILLAR3020000_CODIS_2025-12-31_20260402113626037.zip',
+      moduleCode: 'CODIS'
+    },
+    fr_findis: {
+      url: 'reports/codis/R0MUWSFPU8MPRO8K5P83.CON_FR_PILLAR3020000_FINDIS_2025-12-31_20260320054743707.zip',
+      moduleCode: 'FINDIS'
+    }
+  };
 
-  if (btnSampleCodis) {
-    btnSampleCodis.addEventListener('click', () => {
-      loadSampleReport('reports/codis/P4GTT6GF1W40CVIMFR43.CON_PL_PILLAR3020000_CODIS_2025-12-31_20260325144416216.zip', 'CODIS');
-    });
-  }
-  if (btnSampleFindis) {
-    btnSampleFindis.addEventListener('click', () => {
-      loadSampleReport('reports/codis/P4GTT6GF1W40CVIMFR43.CON_PL_PILLAR3020000_FINDIS_2025-12-31_20260325150838169.zip', 'FINDIS');
+  if (sampleReportSelect) {
+    sampleReportSelect.addEventListener('change', (e) => {
+      const key = e.target.value;
+      const report = SAMPLE_REPORTS[key];
+      if (report) {
+        loadSampleReport(report.url, report.moduleCode);
+      }
     });
   }
 
@@ -918,6 +934,7 @@ function setupEventListeners() {
     reportedTablesSet.clear();
     reportMeta = null;
     reportFileInput.value = '';
+    if (sampleReportSelect) sampleReportSelect.selectedIndex = 0;
     reportBanner.style.display = 'none';
     document.querySelectorAll('.cell-data').forEach(c => {
       c.textContent = '';
