@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EBA DPM Table Layouts</title>
+  <meta name="description" content="EBA DPM Table Layouts & Data Explorer powered by DuckDB-Wasm and Parquet." />
+
+  <!-- Import Map for bare modules -->
+  <script type="importmap">
+    {
+      "imports": {
+        "apache-arrow": "https://cdn.jsdelivr.net/npm/apache-arrow@18.1.0/+esm"
+      }
+    }
+  </script>
+
+  <!-- JSZip CDN for unzipping XBRL-CSV report archives -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="tables.css" />
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash" class="splash">
+    <div class="spinner"></div>
+    <div class="splash-title">EBA DPM Table Layouts</div>
+    <div class="splash-sub" id="splash-status">Initialising DuckDB-Wasm…</div>
+  </div>
+
+  <div class="app-shell">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo">
+        <div class="logo-icon">📊</div>
+        <div>
+          <div class="logo-text">EBA DPM Table Layouts</div>
+          <div class="logo-sub">Pillar 3 · CODIS · Static Grid</div>
+        </div>
+      </div>
+      <div class="nav-buttons" style="display:flex; gap: 8px; margin-left: 24px;">
+        <a href="index.html" class="btn btn-ghost" title="Data Explorer">🦆 Data Explorer</a>
+      </div>
+      <div class="header-spacer"></div>
+      <button class="btn btn-primary" id="btn-load-report">⬇ Load Report (XBRL-CSV)</button>
+      <button class="btn btn-ghost" id="btn-sample-codis" style="margin-left:6px;" title="Load Sample CODIS Report Package (ZIP)">📦 CODIS Sample (ZIP)</button>
+      <button class="btn btn-ghost" id="btn-sample-findis" style="margin-left:6px;" title="Load Sample FINDIS Report Package (ZIP)">📦 FINDIS Sample (ZIP)</button>
+      <input type="file" id="report-file-input" accept=".csv,.json,.zip" style="display:none;" />
+      <button class="btn btn-ghost" id="btn-info" style="margin-left:8px; margin-right:10px;">ⓘ About & Info</button>
+      <div class="status-pill">
+        <div class="status-dot" id="status-dot"></div>
+        <span id="status-text">Initialising…</span>
+      </div>
+    </header>
+
+    <!-- Report Banner -->
+    <div id="report-banner" class="report-banner" style="display:none;">
+      <span class="report-banner-icon">📄</span>
+      <span id="report-banner-meta" class="report-banner-text">Report Loaded</span>
+      <button id="btn-clear-report" class="btn-clear-report" title="Clear Report Data">✕ Clear</button>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="workspace">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="control-group">
+            <label for="release-select">Release Version</label>
+            <select id="release-select" class="select-control"></select>
+          </div>
+          <div class="control-group" style="margin-top:10px;">
+            <label for="module-select">Framework Module</label>
+            <select id="module-select" class="select-control"></select>
+          </div>
+          <div class="search-section" style="margin-top:12px;">
+            <div class="search-wrap">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="table-search" placeholder="Filter tables…" />
+            </div>
+            <button class="btn btn-icon" id="btn-view-mode" title="Toggle Compact / Detailed View">≡</button>
+          </div>
+        </div>
+        <div class="table-count" id="table-count">Loading tables…</div>
+        <div class="table-list" id="table-list" tabindex="0"></div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <div class="table-view-header">
+          <div class="tvh-title-wrap">
+            <div class="tvh-code" id="table-code-display">—</div>
+            <div class="tvh-title" id="table-title-display">Select a table from the sidebar list</div>
+          </div>
+          <div class="tvh-meta">
+            <span class="badge" id="badge-rows" style="display:none;">0 rows</span>
+            <span class="badge" id="badge-cols" style="display:none;">0 cols</span>
+          </div>
+        </div>
+
+        <!-- Sheet Tabs (Z-Dimension) -->
+        <div id="sheet-tabs-wrap" class="sheet-tabs-wrap" style="display:none;">
+          <div class="sheet-tabs" id="sheet-tabs"></div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="table-container-wrap">
+          <div id="table-container" class="table-container">
+            <div class="empty-state">
+              <div class="empty-icon">📊</div>
+              <div class="empty-text">Select a table from the sidebar list to render its layout grid</div>
+            </div>
+          </div>
+          <div id="grid-loader" class="grid-loader" style="display:none;">
+            <div class="spinner"></div>
+            <div id="grid-loader-text">Loading layout…</div>
+          </div>
+        </div>
+
+        <!-- Cell Inspector Detail Pane -->
+        <div id="detail-pane" class="detail-pane" style="display:none;">
+          <div class="dp-header">
+            <div class="dp-title">Cell Inspector</div>
+            <button class="btn-close" id="btn-close-dp">✕</button>
+          </div>
+          <div id="dp-body" class="dp-body">
+            Select a cell in the table layout grid to inspect its DPM properties.
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Info Modal -->
+  <div id="info-modal" class="modal-backdrop">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">About EBA DPM Table Layouts</div>
+        <button class="modal-close" id="btn-close-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p>This application renders <strong>EBA DPM Reporting Table Layouts</strong> directly in the browser using static Parquet files and DuckDB-Wasm.</p>
+        <ul>
+          <li><strong>Zero Backend:</strong> Runs 100% in browser memory via WebAssembly.</li>
+          <li><strong>Multi-Level Headers:</strong> Hierarchical X column trees and Y row groups.</li>
+          <li><strong>XBRL-CSV Report Loader:</strong> Import `.csv` / `.zip` report files to map reported values (`dp{VariableID}`) directly into layout cells.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btn-modal-ok">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="tables.js"></script>
+</body>
+</html>
