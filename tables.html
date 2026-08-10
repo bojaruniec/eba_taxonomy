@@ -43,10 +43,14 @@
       <div class="nav-buttons" style="display:flex; gap: 8px; margin-left: 24px;">
         <a href="index.html" class="btn btn-ghost" title="Back to Data Explorer">🦆 Data Explorer</a>
       </div>
-      <div class="header-spacer"></div>
-      <button class="btn btn-primary" id="btn-load-report">⬇ Load Report (XBRL-CSV)</button>
-      <button class="btn btn-ghost" id="btn-sample-codis" style="margin-left:6px;" title="Load Sample CODIS Report Package (ZIP)">📦 CODIS Sample (ZIP)</button>
-      <button class="btn btn-ghost" id="btn-sample-findis" style="margin-left:6px;" title="Load Sample FINDIS Report Package (ZIP)">📦 FINDIS Sample (ZIP)</button>
+      <select id="sample-report-select" class="select-report-header" style="margin-left:6px;" title="Select a Sample Report Package">
+        <option value="" disabled selected>📦 Select Sample Report…</option>
+        <option value="pl_codis">🇵🇱 PL Bank — CODIS (Common disclosures)</option>
+        <option value="pl_findis">🇵🇱 PL Bank — FINDIS (Financial disclosures)</option>
+        <option value="fr_codis">🇫🇷 FR Bank — CODIS (Common disclosures)</option>
+        <option value="fr_findis">🇫🇷 FR Bank — FINDIS (Financial disclosures)</option>
+      </select>
+      <button class="btn btn-primary" id="btn-load-report" style="margin-left:6px;">⬇ Upload Custom Report</button>
       <input type="file" id="report-file-input" accept=".csv,.json,.zip" style="display:none;" />
       <button class="btn btn-ghost" id="btn-info" style="margin-left:8px; margin-right:10px;">ⓘ About & Info</button>
       <div class="status-pill">
